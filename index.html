@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Rodripágina</title>
+        <meta name="description" content="Mi primera página web">
+        <meta name="robots" content="index, follow">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Doto:wght,ROND@100..900,0..100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            body{
+                margin: 0;
+                padding: 0;
+                background-color:#141618;
+            }
+
+            header{
+                background-color: #191825;
+                padding: 5px 20px;
+            }
+            
+            header h1{
+                color: white;
+                text-align: center;
+                font-family: "Doto", sans-serif;
+            }
+
+            h1:hover{
+                color: #88948b;
+            }
+
+            nav{
+                display: flex;
+                flex-wrap: wrap;
+                background-color: #1d1b29;
+            }
+
+            a{
+                color: rgb(46, 157, 190);
+                padding: 14px 20px;
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                font-style: italic;
+            }
+
+            a:hover{
+                color: rgb(31, 110, 134);
+            }
+
+            .container{
+                display: flex;
+                flex-flow: wrap row;
+            }
+
+            aside{
+                border: 1px solid #88948b;
+                display: flex;
+                flex-flow: wrap column;
+                font-family: "Roboto", sans-serif;
+                flex:1;
+                background-color: #B2BEB5 ; 
+                order: 2;
+                padding: 20px;
+                justify-content: flex-start;
+                align-items: center;
+                text-align: center;
+            }
+
+            aside img{
+                width: 200px;
+            }
+
+            aside p{
+                font-size: 16px;
+            }
+
+            main{
+                flex: 3;
+                font-family: "Roboto", sans-serif;
+                background-color:#f3f7eb ;
+                order: 1;
+                padding: 40px;
+                text-align: center;
+            }
+            h2{
+                text-shadow: 6px 4px 30px rgb(50, 68, 65);
+                font-weight: 800;
+                font-style: normal;
+                text-align: center;
+                color: #08220d;
+                font-size: 28px;
+            }
+
+            section{
+                padding: 30px 10px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            article{
+                padding: 10px 0px;
+            }
+
+            ul{
+                text-align: justify;
+            }
+
+            p{
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 18px;
+            }
+
+            h3{
+                color: #10421a;
+                font-family: "Roboto", sans-serif;
+                font-weight: 800;
+                font-style: normal;
+                font-size: 26px;
+            }
+
+            h4{
+                color: #265c30;
+                font-family: "Roboto", sans-serif;
+                font-weight: 600;
+                font-style: normal;
+                font-size: 20px;
+            }
+            
+            img{
+                box-shadow: 1px 10px 30px rgb(58, 77, 71);
+            }
+
+            strong{
+                color: #463002;
+                font-weight: 600;
+            }
+
+            footer{
+                padding: 1px;
+                font-family: "Doto", sans-serif;
+                padding: 5px 20px;
+                background-color: #141618;
+                color: #ffffff;
+                text-align: center;
+            }
+
+            footer h4{
+                font-family: "Doto", sans-serif;
+                font-weight: 800;
+                color: #ffffff;
+                font-size: 16px;
+            }
+            
+            footer a{
+                color: #3fb857;
+            }
+
+            footer img{
+                height: 40px;
+                box-shadow: none;
+            }
+            span{
+                display: block;
+                padding: 10px;
+            }
+
+            .iconos{
+                display: flex;
+                flex-flow: wrap row;
+                gap: 10px;
+                justify-content: center;
+
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>¡Bienvenido a mi página web!</h1>
+        </header>
+
+        <nav>
+            <a href="#Quien-soy">¿Quien soy?</a>
+            <a href="#Series">¡Series!</a>
+            <a href="#Libros">¡Libros!</a>
+        </nav>
+
+        <div class="container">
+            <aside>
+                    <section>
+                        <h3>Este soy yo:</h3>
+                    <img src="imagenes/YO.jpg"
+                    id="yo">
+                    <p>Mi nombre es <strong>Rodrigo Alexis Mejía Rivas</strong>, un jóven salvadoreño apasionado por la tecnología y el conocimiento en general. Nací en el 2005 en Soyapango y actualmente estoy estudiando en la <strong>Universidad Don bosco</strong> la carrera de <strong>Ingenieria en Ciencias de la Computación</strong>. ¡Será un placer trabajar con usted!</p>
+                    </section>
+
+                    <section>
+                        <h3>Página hecha con:</h3>
+                        <p>Para la creación de esta página se usó exclusivamente <strong>HTML</strong>, <strong>CSS</strong>, conocimientos básicos de <strong>FLEXBOX</strong> y mucho cariño.</p>
+                        <img src="imagenes/css-is-awesome.jpg">
+                    </section>
+            </aside>
+            <main>
+                <h2>Espero y tengas una linda experiencia aquí.</h2>
+                <section id="Quien-soy">
+                    <h3>¿Quien soy yo?</h3>
+                    <p>¡Hola!, yo soy Rodrigo, un futuro ingeniero en <strong>Ciencias de la computación</strong> y programador novato, amante de las matematicas y el aprendizaje en general. Esta es mi primera página web aplicando mis conocimientos adquiridos con el lenguaje <strong>HTML</strong> y <strong>CSS</strong>.</p>
+                    
+                    <article>
+                        <h4>¿Que tecnologías manejo?</h4>
+                        <p>Me dedico a la programación <strong>Backend</strong> pero estoy aspirando a ser <strong>Full Stack</strong>, aunque me interesa enormente cada herramienta y lenguaje con el que me cruzo he intento aprender un poco de todo. Mis lenguajes preferidos son:</p>
+                        <ul>
+                            <li>C#</li>
+                            <li>SQL</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <h4>Más sobre mí</h4>
+                        <p>Me considero una persona apasionada por su trabajo, con un gran sentido de la responsabilidad laboral, además de alguien autodidacta que sabe defenderse en cualquier aréa. Soy alguien que sabe liderar un equipo, encontrar soluciones acertivas a problemas complejos y trabajar bajo presión cuando es necesario.</p>
+                    </article>
+                </section>
+
+                <section id="Series">
+                    <h3>Series que recomiendo</h3>
+
+                    <article> <!--Articulo de dicha sección-->
+                        <h4>1. Summer Camp Island</h4>
+                        <p>Esta serie trata sobre las mágicas aventuras de Oscar y Erizo, los cuales se encuentran en una isla mágica en dónde todos sus sueños se harán realidad, o talvez no...</p>
+                        <img 
+                        width="250"
+                        src="imagenes/Oscar_y_Erizo.PNG"
+                        title="Oscar y Erizo">
+                    </article>
+                    <article> <!--Articulo de dicha sección-->
+                        <h4>2.Evangelion </h4>
+                        <p>Uno de los clásicos más memorables no sólo del anime sino también de la animación en general. Trata temas profundos como lo es la depresión, la baja autoestima, el suicidio y cualquier otro que te puedas imaginar, así de buena es.</p>
+                        <img 
+                        width="250"
+                        src="imagenes/Rei.png"
+                        title="Rei">
+                    </article>
+                </section>
+
+                <section id="Libros">
+                    <h3>Mis libros favoritos</h3>
+
+                    <article> <!--Articulo de dicha sección-->
+                        <h4>1. 1984</h4>
+                        <p>Iniciamos con una genial <strong class="key-word">distopía</strong> 
+                            la cual sigue vigente a día de hoy, un excelente 
+                            libro para iniciar este precioso hobby de la mano 
+                            del talentoso escritor <strong>George Orwell</strong>
+                            , prepárate para una espectacular trama la cual te 
+                            hará llorar.</p>
+                        <a download href="imagenes/1984.jpg">
+                            <img 
+                            loading="lazy"
+                            width="250"
+                            src="imagenes/1984.jpg"
+                            title="1984">
+                            
+                        </a>
+
+                    </article>
+
+                    <article> <!--Articulo de dicha sección-->
+                        <h4>2. La insoportable levedad del ser </h4>
+                        <p>Ahh... <strong class="key-word">el amor</strong>, todos lo hemos sentido y si has 
+                            vivido lo suficiente no sólo lo habrás vivido 
+                            sino también sufrido, este libro habla sobre el 
+                            amor en su infinita complejidad por medio de la
+                            historia de dos parejas muy disparejas... 
+                            de la mano del excelentisimo escritor 
+                            <strong>Milan Kundera</strong>, te espera
+                            un duro viaje, buena suerte.</p>
+                        <img 
+                        loading="lazy"
+                        width="250"
+                        src="imagenes/LILDS.jpg"
+                        title="La insoportable levedad del ser">
+                    </article>
+
+                </section>
+
+            </main>
+        </div>
+
+        <footer>
+            <h4>¡Llegaste al final!</h4>
+            <span>Página hecha por: RodrigoAMR</span>
+            <span>Derechos de autor reservados a mí</span>
+            <a href="#">Inicio</a>
+
+
+            <div class="iconos">
+                <a 
+                target="_blank"
+                href="https://www.facebook.com/RodrigoAMR8/">
+                    <img src="imagenes/face.png">
+                </a>
+                <a 
+                target="_blank"
+                href="https://www.instagram.com/rodrigo.a.m.r/">
+                    <img src="imagenes/insta.png">
+                </a>
+                <a 
+                target="_blank"
+                href="https://open.spotify.com/user/5q50kxqiospwh6ob0jvoy1p56?si=38080344ef7540b6">
+                    <img src="imagenes/spoti.png">
+                </a>
+            </div>
+        </footer>
+
+    </body>
+</html>
